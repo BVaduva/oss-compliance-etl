@@ -2,9 +2,10 @@
 
 ![PHP](https://img.shields.io/badge/PHP-8.1-777BB4?style=flat&logo=php) ![CakePHP](https://img.shields.io/badge/Framework-CakePHP_Console-red) ![MySQL](https://img.shields.io/badge/Database-MySQL_8.0-00758F?style=flat&logo=mysql) ![Architecture](https://img.shields.io/badge/Design-Service_Oriented-green)
 
-> **Case Study:** A specialized CLI application designed to automate the extraction, normalization, and archiving of Open Source Software (OSS) license data for the automotive sector.
+> **⚠️ Context & Confidentiality:**
+> This project was developed as a **professional capstone project** (Abschlussprojekt) for a major client in the automotive sector.
 >
-> **⚠️ Note on Source Code:** This repository serves as a technical architectural documentation. The original source code was developed within a confidential enterprise environment and represents proprietary intellectual property. This documentation demonstrates the architectural decisions and problem-solving strategies.
+> While the source code represents proprietary intellectual property and cannot be published, this repository serves as a **technical case study**. It documents the architectural decisions, the ETL pipeline design, and the database modeling used to solve the client's compliance challenge.
 
 ## 1. Executive Summary & Impact
 
