@@ -1,6 +1,8 @@
 # Enterprise OSS Data Compliance System
-
-> **Case Study:** A specialized CLI application designed to automate the extraction, normalization, and archival of Open Source Software (OSS) license data for the automotive sector.
+> **⚠️ Note on Source Code:**
+> This repository serves as a **technical case study** and architectural documentation.
+> The original source code was developed within a confidential enterprise environment (Automotive Sector) and represents proprietary intellectual property.
+> This documentation demonstrates the architectural decisions, design patterns, and problem-solving strategies applied during development.
 
 ## 1. Executive Summary & Impact
 
