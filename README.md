@@ -1,8 +1,10 @@
 # Enterprise OSS Data Compliance System
-> **⚠️ Note on Source Code:**
-> This repository serves as a **technical case study** and architectural documentation.
-> The original source code was developed within a confidential enterprise environment (Automotive Sector) and represents proprietary intellectual property.
-> This documentation demonstrates the architectural decisions, design patterns, and problem-solving strategies applied during development.
+
+![PHP](https://img.shields.io/badge/PHP-8.1-777BB4?style=flat&logo=php) ![CakePHP](https://img.shields.io/badge/Framework-CakePHP_Console-red) ![MySQL](https://img.shields.io/badge/Database-MySQL_8.0-00758F?style=flat&logo=mysql) ![Architecture](https://img.shields.io/badge/Design-Service_Oriented-green)
+
+> **Case Study:** A specialized CLI application designed to automate the extraction, normalization, and archiving of Open Source Software (OSS) license data for the automotive sector.
+>
+> **⚠️ Note on Source Code:** This repository serves as a technical architectural documentation. The original source code was developed within a confidential enterprise environment and represents proprietary intellectual property. This documentation demonstrates the architectural decisions and problem-solving strategies.
 
 ## 1. Executive Summary & Impact
 
