@@ -98,7 +98,7 @@ The architecture supports adding new brands easily.
 
 ---
 
-## Technology Stack
+## Tech Stack
 
 * **Language:** PHP 8.x (Strict Types enabled)
 * **Framework:** CakePHP Console (CLI Shell, ORM, DI Container)
