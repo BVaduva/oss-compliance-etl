@@ -5,13 +5,14 @@
 > **⚠️ Context & Confidentiality:**
 > This project was developed as a **professional capstone project** (Abschlussprojekt) for a major client in the automotive sector.
 >
-> While the source code represents proprietary intellectual property and cannot be published, this repository serves as a **technical case study**. It documents the architectural decisions, the ETL pipeline design, and the database modeling used to solve the client's compliance challenge.
+> While the source code represents proprietary intellectual property and cannot be published, this repository serves as a **technical case study**.
+> It documents the architectural decisions, the ETL pipeline design, and the database modeling used to solve the client's compliance challenge.
 
-## 1. Executive Summary & Impact
+## Executive Summary & Impact
 
 **The Challenge:**
 
-The client faced a massive influx of unorganized OSS documentation files dispersed across thousands of deeply nested folders. 
+The client faced a massive influx of unorganized OSS documentation files scattered across thousands of deeply nested folders. 
 Many files shared identical generic names (e.g., `license.txt`, `oss.zip`), making a simple central backup impossible due to naming collisions.
 
 **The Solution:**
@@ -28,7 +29,7 @@ Development of an automated ETL pipeline that extracts these files, resolves nam
 
 ---
 
-## 2. System Architecture
+## System Architecture
 
 The system follows a **Service-Oriented Architecture (SOA)** within a CLI environment. 
 It prioritizes a clean separation of tasks: the scraping logic is completely separated from saving files or database operations.
@@ -60,7 +61,7 @@ By enforcing strict typing (PHP 8+), the project maintains high code quality sta
 
 ---
 
-## 3. Data Modeling & Persistence
+## Data Modeling & Persistence
 
 A critical part of the solution was moving from flat lists to a relational database model. This structure allows for complex queries regarding license usage across different vehicle brands.
 
@@ -75,17 +76,17 @@ A critical part of the solution was moving from flat lists to a relational datab
 
 ---
 
-## 4. Key Technical Challenges Solved
+## Key Technical Challenges Solved
 
 ### Handling "Dirty Data"
 
-Vendor portals often provided inconsistent HTML structures.
+Vendor portals often provided (REALLY) inconsistent HTML structures.
 
-* **Solution:** Implementation of a `DataNormalizationService`. This layer cleans up currency formats, dates, and file names before they are saved to the database.
+* **Solution:** Implementation of a `DataNormalizationService`. This layer cleans up bad formats, dates, and file names before they are saved to the database.
 
 ### Resilience & File Locking
 
-Downloading thousands of files at once carries the risk of data corruption or overwriting files.
+Downloading thousands of files into a central hub carries the risk of data corruption or overwriting files.
 
 * **Solution:** The `FileService` checks if a file already exists and handles naming collisions automatically (e.g., renaming to `file_1.zip`) to ensure no data is lost.
 
@@ -97,10 +98,11 @@ The architecture supports adding new brands easily.
 
 ---
 
-## 5. Technology Stack
+## Technology Stack
 
 * **Language:** PHP 8.x (Strict Types enabled)
 * **Framework:** CakePHP Console (CLI Shell, ORM, DI Container)
+* **Data Persistence:** MySQL / MariaDB (managed via CakePHP ORM)
 * **Parsing:** `DOMDocument` & `DOMXPath` (Native Libxml)
-* **Database:** MySQL / MariaDB (InnoDB Engine)
-* **Environment:** Linux / Docker Containerized
+* **Environment:** Docker / DDEV running on Windows (WSL2)
+* **Dependency Management:** Composer
